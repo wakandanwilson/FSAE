@@ -23,8 +23,8 @@ void loop(){
     int analogSignal2 = analogRead(signal2);
 
     //convert bit values voltage values (0-5v)
-    float voltSignal1 = map(0,1023,0,5000)/1000.0;
-    float voltSignal2 = map(0,1023,0,5000)/1000.0;
+    float voltSignal1 = map(analogSignal1,0,1023,0,5000)/1000.0;
+    float voltSignal2 = map(analogSignal2,0,1023,0,5000)/1000.0;
 
     //print voltage values
     Serial.print("Signal 1: ");
