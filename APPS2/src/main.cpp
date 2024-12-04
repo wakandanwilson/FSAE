@@ -1,10 +1,12 @@
+#include <Arduino.h>
+
 const int signal1 = A0;
 //const int signal2 = A1;
 
 void setup(){
     Serial.begin(9600);
-    pinmode(signal1, INPUT);
-    //pinmode(signal2, INPUT);
+    pinMode(signal1, INPUT);
+    //pinMode(signal2, INPUT);
 
     digitalWrite(signal1, HIGH);
     //digitalWrite(signal2, HIGH);
